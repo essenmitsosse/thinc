@@ -90,15 +90,6 @@ const plugins = [
     `gatsby-plugin-offline`,
 ]
 
-if (fs.existsSync('./src/fonts')) {
-    plugins.push({
-        resolve: `gatsby-plugin-sass-resources`,
-        options: {
-            resources: ['./src/styles/fonts.sass'],
-        },
-    })
-}
-
 module.exports = {
     siteMetadata: meta,
     plugins,
